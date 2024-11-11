@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/EmmanuelOhore/QuoteGenerator/static/css/main.173846a0.css",
-    "main.js": "/EmmanuelOhore/QuoteGenerator/static/js/main.baf00448.js",
-    "index.html": "/EmmanuelOhore/QuoteGenerator/index.html",
-    "main.173846a0.css.map": "/EmmanuelOhore/QuoteGenerator/static/css/main.173846a0.css.map",
-    "main.baf00448.js.map": "/EmmanuelOhore/QuoteGenerator/static/js/main.baf00448.js.map"
+    "main.css": "/QuoteGenerator/static/css/main.173846a0.css",
+    "main.js": "/QuoteGenerator/static/js/main.baf00448.js",
+    "index.html": "/QuoteGenerator/index.html",
+    "main.173846a0.css.map": "/QuoteGenerator/static/css/main.173846a0.css.map",
+    "main.baf00448.js.map": "/QuoteGenerator/static/js/main.baf00448.js.map"
   },
   "entrypoints": [
     "static/css/main.173846a0.css",
