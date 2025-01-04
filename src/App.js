@@ -18,24 +18,33 @@ function App() {
     }
     callquote();
   }, []);
+
   const [count, setcount] = useState(0);
   const [author, setauthor] = useState("Mary Kay Ash");
   const [quote, setquote] = useState("");
   const [text, settest] = useState(
     "Never give up beecause you never know if the next try is going to be the one that works"
   );
+
   const handlespeak = () => {
-    let word = text;
-    let value = new SpeechSynthesisUtterance(word);
+    let value = new SpeechSynthesisUtterance(text);
     window.speechSynthesis.speak(value);
   };
+
   const handelquote = () => {
     let array = quote.map((item) => item);
     let Qoute = array[count];
-    setcount((c) => c + 1);
+
+    if (count === 29) {
+      toast.error("u have reached the end of the quote");
+      setcount(0);
+    } else {
+      setcount((c) => c + 1);
+    }
     settest(Qoute.quote);
     setauthor(Qoute.author);
   };
+
   const handleCopy = () => {
     navigator.clipboard
       .writeText(text)
